@@ -6,7 +6,9 @@ import Footer from './Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-  <App />
-  <Footer />
+    <div className='container'>
+      <App />
+    </div>
+    <Footer />
   </>
 );
