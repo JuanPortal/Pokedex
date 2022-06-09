@@ -29,6 +29,21 @@
     color: gray;
 }
 
+.container .card {
+    background-color: rgb(220, 151, 151);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card h2 {
+    text-transform: capitalize;
+}
+
 /* FOOTER */
 footer{
     position: absolute;

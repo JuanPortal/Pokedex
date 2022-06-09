@@ -1,10 +1,14 @@
-export const getPokemon = async (number) => {
-    const url = `https://pokeapi.co/api/v2/pokemon/${number}`
+export const getPokemon = async (species) => {
+    // const url = `https://pokeapi.co/api/v2/pokemon/${encodeURI(species)}`
+
+    species = species.replace(' ', '-')
+
+    const url = `https://pokeapi.co/api/v2/pokemon/${species}`
     const res = await fetch(url).then(p => p.json())
     
     const pokemon = {
         id: res.id,
-        name: res.species.name,
+        name: res.species.name.replace('-', ' '),
         sprite: res.sprites.front_default,
         shinySprite: res.sprites.front_shiny,
         types: res.types.map(type => {
