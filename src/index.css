@@ -38,6 +38,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 25%;
+    max-width: 30%;
 }
 
 .container .card h2 {
