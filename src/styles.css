@@ -12,8 +12,8 @@
     align-items: center;
     /* justify-content: center; */
     height: 92vh;
-    background-image: url('../public/media/pattern.png');
-    background-size: cover;
+    background-image: url('./media/pattern.png');
+    /* background-size: cover; */
 }
 
 .container form input {
@@ -48,8 +48,8 @@
 
 /* FOOTER */
 footer{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
     background-color: black;
     color: white;
