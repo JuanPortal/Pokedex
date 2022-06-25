@@ -4,18 +4,22 @@ import { SearchBar } from './components/SearchBar'
 import { fetchPokemon } from './helpers/fetchPokemon'
 
 export const Pokedex = () => {
-    
-    const [pokemonName, setPokemonName] = useState(['unown'])
+
+    const [pokemonName, setPokemonName] = useState(['charizard'])
 
     const onNewPokemon = newPokemon => setPokemonName(newPokemon)
 
     return (
         <>
-            <h1>Pokedex</h1>
+            <header>
+                <h1>Pokedex</h1>
+            </header>
 
-            {/* <SearchBar onNewPokemon={onNewPokemon} /> */}
-            {fetchPokemon('Pikachu')}
-            {/* <Container pokemonName={pokemonName} /> */}
+            <section>
+                <SearchBar onNewPokemon={onNewPokemon} />
+
+                <Container pokemonName={pokemonName} />
+            </section>
         </>
     )
 }

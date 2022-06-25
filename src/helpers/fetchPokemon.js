@@ -1,5 +1,7 @@
 export const fetchPokemon = async (species) => {
-    species = species.replace(' ', '-')
+    let pokemonList = []
+
+    // species = species.replace(' ', '-')
     const url = `https://pokeapi.co/api/v2/pokemon/${species}`
     const res = await fetch(url)
     // const data = {} = await res.json()
@@ -25,6 +27,8 @@ export const fetchPokemon = async (species) => {
         height: data.height / 10,
         weight: data.weight / 10
     }
-    console.log(pokemon)
-    return pokemon
+
+    pokemonList.push(pokemon)
+    
+    return pokemonList
 }

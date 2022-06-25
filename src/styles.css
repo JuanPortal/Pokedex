@@ -4,19 +4,38 @@
     font-family: Poppins;
 }
 
-/* CONTAINER */
-.container{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    height: 92vh;
+#root {
+    height: 100vh;
     background-image: url('./media/pattern.png');
-    /* background-size: cover; */
 }
 
-.container form input {
+/* HEADER */
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+/* SECTION */
+
+section {
+    height: 82vh;
+}
+
+section form {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section form input {
     border: 1px solid black;
     border-radius: 5px;
     display: flex;
@@ -29,7 +48,14 @@
     color: gray;
 }
 
-.container .card {
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72vh;
+}
+
+section .container .card {
     background-color: rgb(220, 151, 151);
     border: 1px solid black;
     border-radius: 10px;
@@ -38,18 +64,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    max-width: 30%;
+    width: 30%;
+    max-width: 40%;
+    height: 70%;
 }
 
-.container .card h2 {
+section .container .card h2 {
     text-transform: capitalize;
+}
+
+section .container .card .types {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+section .container .card .types p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 0.2rem;
 }
 
 /* FOOTER */
 footer{
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
     background-color: black;
     color: white;
