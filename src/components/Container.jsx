@@ -11,12 +11,16 @@ export const Container = ({ pokemonName }) => {
                 isLoading && <h3>Loading...</h3>
             }
 
-            <div className='card'>
-                {
-                    pokemon.map(mon => (
-                        <Card key={mon.id} pokemon={mon} />
-                    ))
-                }
+            <div className="pokedex">
+                <img src="\src\media\dex_top.png" title='Pokédex top piece' alt='Pokédex top piece' />
+                <div className='card'>
+                    {
+                        pokemon.map(mon => (
+                            <Card key={mon.id} pokemon={mon} />
+                        ))
+                    }
+                </div>
+                <img src="\src\media\dex_bottom.png" title='Pokédex bottom piece' alt='Pokédex bottom piece' />
             </div>
         </div>
     )

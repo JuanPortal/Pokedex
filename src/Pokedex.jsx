@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import { Container } from './components/Container'
 import { SearchBar } from './components/SearchBar'
-import { fetchPokemon } from './helpers/fetchPokemon'
 
 export const Pokedex = () => {
 
     const [pokemonName, setPokemonName] = useState(['charizard'])
 
-    const onNewPokemon = newPokemon => setPokemonName(newPokemon)
+    const onAddPokemon = newPokemon => setPokemonName(newPokemon)
 
     return (
         <>
@@ -16,7 +15,7 @@ export const Pokedex = () => {
             </header>
 
             <section>
-                <SearchBar onNewPokemon={onNewPokemon} />
+                <SearchBar onNewPokemon={onAddPokemon} />
 
                 <Container pokemonName={pokemonName} />
             </section>
