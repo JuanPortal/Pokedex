@@ -13,7 +13,7 @@ export const useFetchPokemon = (pokemonName) => {
 
     useEffect(() => {
         getPokemon()
-    }, [])
+    }, [pokemon])
 
 
     return {

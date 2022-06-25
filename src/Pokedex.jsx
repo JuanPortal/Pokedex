@@ -4,9 +4,13 @@ import { SearchBar } from './components/SearchBar'
 
 export const Pokedex = () => {
 
-    const [pokemonName, setPokemonName] = useState(['charizard'])
+    const [pokemonName, setPokemonName] = useState(['unown'])
 
-    const onAddPokemon = newPokemon => setPokemonName(newPokemon)
+    const onAddPokemon = newPokemon => {
+        
+        setPokemonName([newPokemon])
+        console.log(pokemonName)
+    }
 
     return (
         <main>

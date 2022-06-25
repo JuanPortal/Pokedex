@@ -39,6 +39,7 @@ export const Card = ({ pokemon }) => {
             <div className='abilities'>
                 {
                     pokemon.abilities.map(ability => {
+                        ability = ability.toString().replace('-', ' ')
                         return <p key={ability}>{ability}</p>
                     })
                 }

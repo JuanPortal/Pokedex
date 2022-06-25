@@ -16,7 +16,7 @@ export const SearchBar = ({onNewPokemon}) => {
         <form onSubmit={onSubmit}>
             <input
                 type='text'
-                placeholder='Enter a category'
+                placeholder='Enter a pokemon'
                 value={inputValue}
                 onChange={onInputChange}
             />
