@@ -8,7 +8,7 @@ export const Container = ({ pokemonName }) => {
     return (
         <div className='container'>
             {
-                isLoading && <h3>Loading...</h3>
+                // isLoading && <h3>Loading...</h3>
             }
 
             <div className="pokedex">

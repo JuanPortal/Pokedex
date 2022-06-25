@@ -9,16 +9,18 @@ export const Pokedex = () => {
     const onAddPokemon = newPokemon => setPokemonName(newPokemon)
 
     return (
-        <>
-            <header>
-                <h1>Pokedex</h1>
-            </header>
+        <main>
+            <section>
+                <header>
+                    <h1>Pokedex</h1>
+                </header>
+
+                <SearchBar onNewPokemon={onAddPokemon} />
+            </section>
 
             <section>
-                <SearchBar onNewPokemon={onAddPokemon} />
-
                 <Container pokemonName={pokemonName} />
             </section>
-        </>
+        </main>
     )
 }
