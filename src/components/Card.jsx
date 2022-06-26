@@ -6,7 +6,7 @@ export const Card = ({ pokemon }) => {
         <>
             <h2>{pokemon.name}</h2>
 
-            <img src={pokemon.shinySprite} />
+            <img src={pokemon.shinySprite} title={pokemon.name} alt={pokemon.name} />
 
             <Types pokemon={pokemon}/>
 
