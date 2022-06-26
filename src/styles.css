@@ -93,6 +93,7 @@ section .container .pokedex .card .types p {
     font-weight: bold;
     border: 0.0625rem solid black;
     padding: 0.2rem;
+    border-radius: 0.7rem;
 }
 
 section .container .pokedex .card table {

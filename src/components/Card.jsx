@@ -1,3 +1,5 @@
+import { Types } from "./Types"
+
 export const Card = ({ pokemon }) => {
     // console.log(pokemon)
     return (
@@ -6,13 +8,7 @@ export const Card = ({ pokemon }) => {
 
             <img src={pokemon.shinySprite} />
 
-            <div className='types'>
-                {
-                    pokemon.types.map(type => {
-                        return <p key={type}>{type}</p>
-                    })
-                }
-            </div>
+            <Types pokemon={pokemon}/>
 
             <table>
                 <thead>
