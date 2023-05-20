@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
 }
 
 #root {
@@ -13,15 +13,18 @@
 }
 
 /* MAIN */
+
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 92vh;
     padding: 0 15rem;
+    gap: 50px;
 }
 
 /* HEADER */
+
 header {
     height: 10vh;
     display: flex;
@@ -34,6 +37,7 @@ header h1 {
 }
 
 /* SECTION */
+
 section form {
     height: 10vh;
     display: flex;
@@ -55,6 +59,7 @@ section form input {
 }
 
 /* POKEDEX */
+
 section .container .pokedex {
     background: linear-gradient(to top, #f4f4f4, rgb(127, 255, 212, 0.4) 10%, #f4f4f4 120%);
 }
@@ -129,6 +134,7 @@ section .container .pokedex .card .mass {
 }
 
 /* FOOTER */
+
 footer {
     width: 100%;
     background-color: black;
@@ -148,4 +154,13 @@ footer a {
 footer a:hover {
     color: #800040;
     font-size: large;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
