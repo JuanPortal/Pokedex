@@ -6,6 +6,15 @@ export const fetchPokemon = async (species) => {
     const res = await fetch(url)
     const data = await res.json()
 
+    // For pokemon with more than 1 form
+
+    // const extraUrl = `https://pokeapi.co/api/v2/pokemon-species/${species}`
+    // const extraRes = await fetch(extraUrl)
+    // const extraData = await extraRes.json()
+
+    // console.log()
+
+
     const pokemon = {
         id: data.id,
         name: data.species.name.replace('-', ' '),
