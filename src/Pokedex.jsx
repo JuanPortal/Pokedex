@@ -7,7 +7,6 @@ export const Pokedex = () => {
     const [pokemonName, setPokemonName] = useState(['unown'])
 
     const onAddPokemon = newPokemon => {
-        
         setPokemonName([newPokemon])
         console.log(pokemonName)
     }
