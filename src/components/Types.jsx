@@ -25,8 +25,6 @@ export const Types = ({ pokemon }) => {
         <div className='types'>
             {
                 pokemon.types.map(type => {
-                    // console.log(typeColors.type)
-                    // return <p style={{backgroundColor: typeColors.type}} key={type}>{type}</p>
                        return <p style={{backgroundColor: `${typeColors[type]}`}} key={type}>{type}</p>
                 })
             }

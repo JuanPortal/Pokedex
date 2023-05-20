@@ -1,7 +1,6 @@
 import { Types } from "./Types"
 
 export const Card = ({ pokemon }) => {
-    // console.log(pokemon)
     return (
         <>
             <h2>{pokemon.name}</h2>
