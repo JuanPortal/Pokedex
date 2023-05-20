@@ -12,7 +12,8 @@ export const Container = ({ pokemonName }) => {
             }
 
             <div className="pokedex">
-                <img src="\src\media\dex_top.png" title='Pokédex top piece' alt='Pokédex top piece' />
+                {/* <img src="\src\media\dex_top.png" title='Pokédex top piece' alt='Pokédex top piece' /> */}
+                <img src="http://imgfz.com/i/OgyZS31.png" title='Pokédex top piece' alt='Pokédex top piece' />
                 <div className='card'>
                     {
                         pokemon.map(mon => (
@@ -20,7 +21,8 @@ export const Container = ({ pokemonName }) => {
                         ))
                     }
                 </div>
-                <img src="\src\media\dex_bottom.png" title='Pokédex bottom piece' alt='Pokédex bottom piece' />
+                {/* <img src="\src\media\dex_bottom.png" title='Pokédex bottom piece' alt='Pokédex bottom piece' /> */}
+                <img src="http://imgfz.com/i/RMGeJLF.png" title='Pokédex bottom piece' alt='Pokédex bottom piece' />
             </div>
         </div>
     )
