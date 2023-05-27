@@ -11,3 +11,7 @@ Still in progress...
 
 <img src="https://raw.githubusercontent.com/juanportal/Pokedex/main/src/media/progress.gif" width="200">
 -->
+
+Hosted on Netlify
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c99d763b-688e-41fd-95f4-d11eebcc72a0/deploy-status)](https://app.netlify.com/sites/pkdex-web/deploys)
