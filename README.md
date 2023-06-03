@@ -1,6 +1,6 @@
-# Pokedex
+# Pokédex
 
-This is a Pokédex created using React and the Pokémon API
+This is a Pokédex made with React and the Pokémon API
 
 ![image](https://user-images.githubusercontent.com/78442505/175798955-5435564c-0fb8-48e7-9c66-6d50f3a0bc77.png)
 
